@@ -1,0 +1,15 @@
+class Solution(object):
+    def hammingDistance(self, x, y):
+        self.x=x
+        self.y=y
+        a=format(x,'b').zfill(32)
+        b=format(y,'b').zfill(32)
+        alist=map(int,a)
+        blist=map(int,b)
+        count=0
+        for a,b in zip(alist,blist):
+            if a!=b:
+                count+=1
+        return count
+hd=Solution()
+hd.hammingDistance(1,4)
