@@ -1,0 +1,11 @@
+class Solution(object):
+    def canWinNim(self, n):
+        self.n=n
+        if n==1 or n==2 or n==3:
+            return True
+        elif n%4!=0:
+            return True
+        elif n%4==0:
+            return False
+stones=Solution()
+stones.canWinNim(4)
